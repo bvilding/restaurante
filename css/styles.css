@@ -1,0 +1,46 @@
+.first-slide{
+  background-image: url("../img/wood-2.jpg")
+}
+
+.carousel-inner .item{
+  height:70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-logo {
+  max-height:300px;
+}
+
+.second-slide{
+  background-image: url('../img/restaurant-2.jpg');
+}
+
+.third-slide{
+  background-image: url('../img/farm-2.jpg');
+}
+
+.navbar-default{
+  background-color:transparent;
+  border-color:transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+  color:white;
+  background-color:rgba(0,0,0,.5)
+}
+
+.navbar-default .navbar-nav>li>a{
+  color:white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color:orange;
+  background-color:rgba(0,0,0,.3)
+}
+
+.navbar-default .navbar-nav>.active>a:hover{
+  color:orange;
+}
