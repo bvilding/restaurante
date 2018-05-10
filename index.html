@@ -4,17 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Restaurante</title>
+
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display|Raleway" rel="stylesheet">
+	<!-- End Custom CSS -->
 </head>
-<body><!-- Start Body -->
-	<!-- Start Nav Bar -->
+<body data-spy="scroll" data-target="#navbar-example"><!-- Start Body -->
+
+	<!-- Start Nav Bar Section -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -24,23 +29,21 @@
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="collapse navbar-collapse" id="navbar-example">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-	            <li><a href="#">Our Story</a></li>
-	            <li><a href="#">Review</a></li>
-	            <li><a href="#">Menu</a></li>
-	            <li><a href="#">Contact Us</a></li>
-	          </ul>
-	        </li>
-	      </ul>
+	        		<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+	            <li><a href="#our_story">Our Story</a></li>
+	            <li><a href="#review">Review</a></li>
+	            <li><a href="#menu">Menu</a></li>
+	            <li><a href="#contact">Contact Us</a></li>
+	       </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-<!-- End Navbar -->
+<!-- End Navbar Section -->
 
-<!-- Start Carousel -->
-<div class="container-fluid">
+<!-- Start Carousel Section  -->
+<section class="container-fluid" id="home">
 	<div class="row">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -85,11 +88,233 @@
 	  </a>
 	</div>
 	</div>
-</div>
-	<!-- End Carousel -->
+</section>
+<!-- End Carousel Section  -->
+
+<!-- Start Home Content Section -->
+<section class="container" id="our_story">
+	<div class="row"></div>
+	<div class="col-md-6">
+		<h1>Our Story</h1>
+		<h3>One Man. One Dream.</h3>
+	</div>
+	<div class="col-md-6">
+		<h2>1989</h2>
+		<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusantium earum saepe laboriosam iste possimus amet impedit, aliquam at assumenda esse fugit voluptas accusamus consectetur! Cumque amet accusamus ex nostrum enim expedita pariatur! Officia perspiciatis voluptas quas ipsum iusto cum illo aspernatur quaerat voluptatum culpa velit, doloremque excepturi, molestiae assumenda!</p>
+		<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusantium earum saepe laboriosam iste possimus amet impedit, aliquam at assumenda esse fugit voluptas accusamus consectetur! Cumque amet accusamus ex nostrum enim expedita pariatur! Officia perspiciatis voluptas quas ipsum iusto cum illo aspernatur quaerat voluptatum culpa velit, doloremque excepturi, molestiae assumenda!</p>
+		<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusantium earum saepe laboriosam iste possimus amet impedit, aliquam at assumenda esse fugit voluptas accusamus consectetur! Cumque amet accusamus ex nostrum enim expedita pariatur! Officia perspiciatis voluptas quas ipsum iusto cum illo aspernatur quaerat voluptatum culpa velit, doloremque excepturi, molestiae assumenda!</p>
+	</div>
+</section>
+	<!-- End Home Content Section  -->
+	<!-- Start Quote Section  -->
+	<section class="container-fluid" id="review">
+		<div class="row text-center">
+			<div class="container">
+				<h1>Fresno Bee</h1>
+				<p>The freshest and best ingredients come together to make some of the best fruit I have ever eaten.</p>
+			</div>
+		</div>
+	</section>
+	<!-- End Quote -->
+	<!-- Start Menu Section -->
+	<section class="container-fluid" id="menu">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h1>Menu</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs nav-justified" role="tablist">
+						<li role="presentation" class="active"><a href="#appetizer" aria-controls="appetizer" role="tab" data-toggle="tab">Appetizer</a></li>
+						<li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch</a></li>
+						<li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
+						<li role="presentation"><a href="#dessert" aria-controls="dessert" role="tab" data-toggle="tab">Dessert</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!--Start Appetizer-->
+						<div role="tabpanel" class="tab-pane active" id="appetizer">
+							<div class="row food">
+								<div class="col-md-3">
+									<img src="img/dip.jpg" alt="Dip" class="img-responsive img-thumbnail">
+									<h3>Appetizer 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/eggplant.jpg" alt="Eggplant Appetizer" class="img-responsive img-thumbnail">
+									<h3>Appetizer 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/meat.jpg" alt="Meat" class="img-responsive img-thumbnail">
+									<h3>Appetizer 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/bruschetta.jpg" alt="Bruschetta" class="img-responsive img-thumbnail">
+									<h3>Appetizer 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+							</div>
+						</div>
+						<!--End Appetizer-->
+						<!--Start Lunch-->
+						<div role="tabpanel" class="tab-pane" id="lunch">
+							<div class="row food">
+								<div class="col-md-3">
+									<img src="img/lunch1.jpg" alt="lunch1" class="img-responsive img-thumbnail">
+									<h3>Lunch 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Lunch2.jpg" alt="Lunch2" class="img-responsive img-thumbnail">
+									<h3>Lunch 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Lunch3.jpg" alt="Lunch3" class="img-responsive img-thumbnail">
+									<h3>Lunch 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Lunch4.jpg" alt="Lunch4" class="img-responsive img-thumbnail">
+									<h3>Lunch 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+							</div>
+						</div>
+						<!--End Lunch-->
+						<!--Start Dinner-->
+						<div role="tabpanel" class="tab-pane" id="dinner">
+							<div class="row food">
+								<div class="col-md-3">
+									<img src="img/Dinner1.jpg" alt="Dinner1" class="img-responsive img-thumbnail">
+									<h3>Dinner 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Dinner2.jpg" alt="Dinner2" class="img-responsive img-thumbnail">
+									<h3>Dinner 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Dinner3.jpg" alt="Dinner3" class="img-responsive img-thumbnail">
+									<h3>Dinner 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Dinner4.jpg" alt="Dinner4" class="img-responsive img-thumbnail">
+									<h3>Dinner 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+							</div>
+						</div>
+						<!--End Dinner-->
+						<!--Start Dessert-->
+						<div role="tabpanel" class="tab-pane" id="dessert">
+							<div class="row food">
+								<div class="col-md-3">
+									<img src="img/Dessert1.jpg" alt="Dessert1" class="img-responsive img-thumbnail">
+									<h3>Dessert 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Dessert2.jpg" alt="Dessert2" class="img-responsive img-thumbnail">
+									<h3>Dessert 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Dessert3.jpg" alt="Dessert3" class="img-responsive img-thumbnail">
+									<h3>Dessert 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+								<div class="col-md-3">
+									<img src="img/Dessert4.jpg" alt="Dessert4" class="img-responsive img-thumbnail">
+									<h3>Dessert 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta. Voluptatum quasi suscipit quos enim sunt quisquam necessitatibus officiis, aliquam nihil vel in ex veritatis commodi voluptas doloremque voluptate fugiat inventore iure dolorum cupiditate et.</p>
+								</div>
+							</div>
+						</div>
+						<!--Start Dessert-->
+					</div>
+					<!-- End Nav Tabs -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Menu Section -->
+	<!-- Start Contact Section -->
+	<section class="container-fluid" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-uppercase">Contact Us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vitae expedita ipsam earum, consequatur sapiente perferendis dolores laudantium ratione maxime, eligendi tempore itaque esse deserunt. Voluptatum sit libero sapiente quidem.</p>
+				</div>
+			</div>
+			<div class="row">
+				<!--Form Start-->
+				<div class="col-md-6">
+					<form class="contact-form">
+						<div class="form-group">
+							<label for="exampleInputName">Name <span>*</span></label>
+							<input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email <span>*</span></label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputSubject">Subject <span>*</span></label>
+							<input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputMessage">Message <span>*</span></label>
+							<textarea name="" id="" name="name" rows="6" class="form-control"></textarea>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> I'm not a robot. <span>*</span></label>
+						</div>
+						<button type="submit" class="btn btn-default center-block">Send Message!</button>
+						<p class="text-center" id="fine-print">All fields marked <span>*</span> are mandatory.</p>
+					</form>
+					<!--Form End-->
+				</div>
+			</div>
+			<!-- Start Map -->
+				<div class="col-md-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6069389095273!2d-119.78838988491111!3d36.73200017923576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e272ae22be3%3A0x3aea389fb82618b6!2s710+Van+Ness+Ave+%23130%2C+Fresno%2C+CA+93721!5e0!3m2!1sen!2sus!4v1525914740098" width="600" height="525
+					" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<!-- End Map -->
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Section -->
 	<!-- End Body -->
 	<!-- javascript	 -->
+</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+	        $(function() {
+	            $('a[href*=#]:not([href=#])').click(function() {
+	                    if( $(this).attr("href")=="#carousel-example-generic" || $(this).attr("href")=="#appetizer" || $(this).attr("href")=="#lunch" || $(this).attr("href")=="#dinner" || $(this).attr("href")=="#dessert") return;//These are the exceptions
+	                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	                            var target = $(this.hash);
+	                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	                            if (target.length) {
+	                                    $('html,body').animate({
+	                                            scrollTop: target.offset().top
+	                                    }, 1000);
+	                                    return false;
+	                            }
+	                    }
+	            });
+	        });
+	  </script>
 </body>
 </html>
